@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif; 
+}
+
 .container {
     background-color: #0693e3;
 }

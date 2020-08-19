@@ -1,0 +1,62 @@
+[
+    {
+        "state": "Illinois",
+        "slug": "illinois",
+        "checkRegistrationLink": "https://ova.elections.il.gov/RegistrationLookup.aspx",
+        "absenteeApplicationLink": "https://www.elections.il.gov/ElectionOperations/VotingByMailAgreement.aspx",
+        "keyDates": {
+            "voterRegistrationDeadline": "October 18, 2020",
+            "absenteeRequestDeadline": "October 29, 2020"
+        }
+    },
+    {
+        "state": "Michigan",
+        "slug": "michigan",
+        "checkRegistrationLink": "https://mvic.sos.state.mi.us/RegisterVoter/Index",
+        "absenteeApplicationLink": "https://mvic.sos.state.mi.us/Home/VoteAtHome/#online",
+        "keyDates": {
+            "voterRegistrationDeadline": "October 19, 2020",
+            "absenteeRequestDeadline": "October 30, 2020"
+        }
+    },
+    {
+        "state": "Minnesota",
+        "slug": "minnesota",
+        "checkRegistrationLink": "https://mnvotes.sos.state.mn.us/VoterStatus.aspx",
+        "absenteeApplicationLink": "https://mnvotes.sos.state.mn.us/ABRegistration/ABRegistrationStep1.aspx",
+        "keyDates": {
+            "voterRegistrationDeadline": "October 13, 2020",
+            "absenteeRequestDeadline": "November 2, 2020"
+        }
+    },
+    {
+        "state": "New Hampshire",
+        "slug": "new-hampshire",
+        "checkRegistrationLink": "https://sos.nh.gov/elections/voters/register-to-vote/",
+        "absenteeApplicationLink": "https://sos.nh.gov/elections/voters/register-to-vote/absentee/",
+        "keyDates": {
+            "voterRegistrationDeadline": "October 13, 2020",
+            "absenteeRequestDeadline": "November 2, 2020"
+        }
+    },
+    {
+        "state": "New York",
+        "slug": "new-york",
+        "checkRegistrationLink": "https://www.ny.gov/services/register-vote",
+        "absenteeApplicationLink": "https://www.elections.ny.gov/votingabsentee.html",
+        "keyDates": {
+            "voterRegistrationDeadline": "October 9, 2020",
+            "absenteeRequestDeadline": "October 27, 2020"
+        }
+    },
+    {
+        "state": "Washington",
+        "slug": "washington",
+        "checkRegistrationLink": "https://www.sos.wa.gov/elections/register.aspx",
+        "absenteeApplicationLink": "",
+        "keyDates": {
+            "voterRegistrationDeadline": "October 26, 2020",
+            "absenteeRequestDeadline": ""
+        }
+    }
+]
