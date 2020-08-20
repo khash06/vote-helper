@@ -20,7 +20,14 @@ const Home = () => {
   return (
     <Layout>
       <Head title="Home" />
-      <p>We have <span>{diffDays}</span> days until election day.</p>
+      <section className={homeStyles.landing}>      
+        <p className={homeStyles.landingText}>We have <span className={homeStyles.days}>{diffDays}</span> days until election day.</p>
+        <p className={homeStyles.ready}>Are you ready?</p>
+      </section>
+      <section>
+        <span>PLEASE</span>
+        <span>VOTE...</span>
+      </section>
       <p>I get it...</p>
       <p>It's the most important election of our lifetimes. Again.</p>
       <p>So, I wanted to help you guys get more information to help you vote! Thanks (I guess?) to COVID, all of us have no excuse mail-in voting, so there really is no reason not to vote when you can vote in your pajamas at home.</p>

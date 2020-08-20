@@ -9,14 +9,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Noto Sans']
-        }
-      }
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
@@ -24,6 +16,17 @@ module.exports = {
       }
     },
     "gatsby-transformer-json",
+    {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Noto Sans',
+            variants: ['400', '400i', '700', '700i']
+          },
+        ]
+      }
+    },
   ],
   siteMetadata: {
     title: "Please Vote...",
