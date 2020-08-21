@@ -17,13 +17,21 @@ module.exports = {
     },
     "gatsby-transformer-json",
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
           {
-            family: 'Noto Sans',
-            variants: ['400', '400i', '700', '700i']
+            family: `Raleway`,
+            variants: [`700`, `800`, `900`]
           },
+          {
+            family: `Roboto`,
+            variants: [`400`, `500`, `700`]
+          },
+          {
+            family: `Lobster`,
+            variants: [`400`]
+          }
         ]
       }
     },

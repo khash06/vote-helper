@@ -23,7 +23,24 @@
     margin-top: 1rem;
 }
 
-.buttonContainer {
+.text {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text > p {
+    padding: 0.3rem;
+}
+
+.buttonContainer > button {
+    padding: 0.5rem;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
 }
