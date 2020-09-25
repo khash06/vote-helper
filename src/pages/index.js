@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../utils/fontawesome';
 
 import Layout from '../components/Layout';
 import Head from '../components/Head';
@@ -22,9 +24,14 @@ const Home = () => {
   return (
     <Layout>
       <Head title="Home" />
-      <section className={homeStyles.landing}>      
-        <p className={homeStyles.landingText}>We have <span className={homeStyles.days}>{diffDays}</span> days until election day.</p>
+      <section className={homeStyles.landing}>
+        <div className={homeStyles.titleContainer}>
+          <p class={homeStyles.landingText}>We have</p><span className={homeStyles.days}>{diffDays} days</span><p className={homeStyles.landingText}>until</p><p className={homeStyles.landingText}>Election Day</p>      
+        </div>
         <p className={homeStyles.ready}>Are you ready?</p>
+      </section>
+      <section>
+        <p className={homeStyles.scrollDown}><FontAwesomeIcon icon={'chevron-down'} />&nbsp; Scroll Down &nbsp;<FontAwesomeIcon icon={'chevron-down'} /></p>
       </section>
       <main className={homeStyles.main}>
         <section className={homeStyles.text}>
@@ -41,9 +48,16 @@ const Home = () => {
             <button type="button"><Link to="/new-york/">New York</Link></button>
             <button type="button"><Link to="/washington/">Washington</Link></button>
         </section>
+        <section>
+          <p>For more information and, to be honest, better looking places to get your information, check out these sites</p>
+          <a href="https://votesaveamerica.com/">Vote Save America <FontAwesomeIcon icon={'external-link-alt'}/></a>
+          <a href="https://www.washingtonpost.com/elections/2020/how-to-vote/washington/">Washington Post <FontAwesomeIcon icon={'external-link-alt'}/></a>
+          <a href="https://projects.fivethirtyeight.com/how-to-vote-2020/?cid=rrpromo">FiveThirtyEight <FontAwesomeIcon icon={'external-link-alt'}/></a>
+          <a href="https://www.vote.org/">Vote.org <FontAwesomeIcon icon={'external-link-alt'} /></a>
+        </section>
         <p>Please, don't eff this one up...</p>
       </main>
-      <footer>
+      <footer className={homeStyles.footer}>
         Created by Keishi Hashimoto, {year}
       </footer>
     </Layout>
