@@ -26,7 +26,7 @@ const Home = () => {
       <Head title="Home" />
       <section className={homeStyles.landing}>
         <div className={homeStyles.titleContainer}>
-          <p class={homeStyles.landingText}>We have</p><span className={homeStyles.days}>{diffDays} days</span><p className={homeStyles.landingText}>until</p><p className={homeStyles.landingText}>Election Day</p>      
+          <p className={homeStyles.landingText}>We have</p><span className={homeStyles.days}>{diffDays} days</span><p className={homeStyles.landingText}>until</p><p className={homeStyles.landingText}>Election Day</p>      
         </div>
         <p className={homeStyles.ready}>Are you ready?</p>
       </section>
@@ -48,14 +48,16 @@ const Home = () => {
             <button type="button"><Link to="/new-york/">New York</Link></button>
             <button type="button"><Link to="/washington/">Washington</Link></button>
         </section>
-        <section>
+        <section className={homeStyles.text}>
           <p>For more information and, to be honest, better looking places to get your information, check out these sites</p>
-          <a href="https://votesaveamerica.com/">Vote Save America <FontAwesomeIcon icon={'external-link-alt'}/></a>
-          <a href="https://www.washingtonpost.com/elections/2020/how-to-vote/washington/">Washington Post <FontAwesomeIcon icon={'external-link-alt'}/></a>
-          <a href="https://projects.fivethirtyeight.com/how-to-vote-2020/?cid=rrpromo">FiveThirtyEight <FontAwesomeIcon icon={'external-link-alt'}/></a>
-          <a href="https://www.vote.org/">Vote.org <FontAwesomeIcon icon={'external-link-alt'} /></a>
+          <ul>
+            <li><a href="https://votesaveamerica.com/">Vote Save America <FontAwesomeIcon icon={'external-link-alt'}/></a></li>
+            <li><a href="https://www.washingtonpost.com/elections/2020/how-to-vote/washington/">Washington Post <FontAwesomeIcon icon={'external-link-alt'}/></a></li>
+            <li><a href="https://projects.fivethirtyeight.com/how-to-vote-2020/?cid=rrpromo">FiveThirtyEight <FontAwesomeIcon icon={'external-link-alt'}/></a></li>
+            <li><a href="https://www.vote.org/">Vote.org <FontAwesomeIcon icon={'external-link-alt'} /></a></li>
+          </ul>
         </section>
-        <p>Please, don't eff this one up...</p>
+        <p>Please, don't eff this one up...&#129310;</p>
       </main>
       <footer className={homeStyles.footer}>
         Created by Keishi Hashimoto, {year}
