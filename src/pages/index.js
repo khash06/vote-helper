@@ -28,6 +28,7 @@ const Home = () => {
         <div className={homeStyles.titleContainer}>
           <p className={homeStyles.landingText}>We have</p><span className={homeStyles.days}>{diffDays} days</span><p className={homeStyles.landingText}>until</p><p className={homeStyles.landingText}>Election Day</p>      
         </div>
+        {diffDays <= 20 ? <span className={homeStyles.emoji} role='img' aria-label="Scream Face">&#128561;</span> : null}
         <p className={homeStyles.ready}>Are you ready?</p>
       </section>
       <section>
@@ -41,26 +42,26 @@ const Home = () => {
           <p>Select your state below and from there, you can get state-specific information to check if you are registered, how you can register if you are not, and how to request an absentee ballot. Most importantly, I put the deadlines.</p>
         </section>
         <section className={homeStyles.buttonContainer}>
-            <button type="button"><Link to="/illinois/">Illinois</Link></button>
-            <button type="button"><Link to="/michigan/">Michigan</Link></button>
-            <button type="button"><Link to="/minnesota/">Minnesota</Link></button>
-            <button type="button"><Link to="/new-hampshire/">New Hampshire</Link></button>
-            <button type="button"><Link to="/new-york/">New York</Link></button>
-            <button type="button"><Link to="/washington/">Washington</Link></button>
+            <Link className={homeStyles.button} to="/illinois/">Illinois</Link>
+            <Link className={homeStyles.button} to="/michigan/">Michigan</Link>
+            <Link className={homeStyles.button} to="/minnesota/">Minnesota</Link>
+            <Link className={homeStyles.button} to="/new-hampshire/">New Hampshire</Link>
+            <Link className={homeStyles.button} to="/new-york/">New York</Link>
+            <Link className={homeStyles.button} to="/washington/">Washington</Link>
         </section>
         <section className={homeStyles.text}>
           <p>For more information and, to be honest, better looking places to get your information, check out these sites</p>
           <ul>
-            <li><a href="https://votesaveamerica.com/">Vote Save America <FontAwesomeIcon icon={'external-link-alt'}/></a></li>
-            <li><a href="https://www.washingtonpost.com/elections/2020/how-to-vote/washington/">Washington Post <FontAwesomeIcon icon={'external-link-alt'}/></a></li>
-            <li><a href="https://projects.fivethirtyeight.com/how-to-vote-2020/?cid=rrpromo">FiveThirtyEight <FontAwesomeIcon icon={'external-link-alt'}/></a></li>
-            <li><a href="https://www.vote.org/">Vote.org <FontAwesomeIcon icon={'external-link-alt'} /></a></li>
+            <li><a href="https://votesaveamerica.com/" target="_blank" rel="noopener noreferrer">Vote Save America <FontAwesomeIcon icon={'external-link-alt'}/></a></li>
+            <li><a href="https://www.washingtonpost.com/elections/2020/how-to-vote/" target="_blank" rel="noopener noreferrer">Washington Post <FontAwesomeIcon icon={'external-link-alt'}/></a></li>
+            <li><a href="https://projects.fivethirtyeight.com/how-to-vote-2020/?cid=rrpromo" target="_blank" rel="noopener noreferrer">FiveThirtyEight <FontAwesomeIcon icon={'external-link-alt'}/></a></li>
+            <li><a href="https://www.vote.org/" target="_blank" rel="noopener noreferrer">Vote.org <FontAwesomeIcon icon={'external-link-alt'} /></a></li>
           </ul>
         </section>
-        <p>Please, don't eff this one up...&#129310;</p>
+        <p className={homeStyles.bottomNote}>Please, don't eff this one up...<span role='img' aria-label="Fingers Crossed">&#129310;</span></p>
       </main>
       <footer className={homeStyles.footer}>
-        Created by Keishi Hashimoto, {year}
+        <p>Created by Keishi Hashimoto, {year}</p>
       </footer>
     </Layout>
   )
