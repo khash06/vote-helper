@@ -1,0 +1,25 @@
+.mainContainer {
+    height: 100vh;
+}
+
+.title {
+    font-size: 4.2rem;
+    margin-top: 2rem;
+}
+
+.datesContainer {
+    font-size: 2.2rem;
+}
+
+.datesContainer > ul {
+    list-style-type: "\2714";
+}
+
+.datesTitle {
+    margin: 2rem 0 1rem;
+}
+
+.links {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
